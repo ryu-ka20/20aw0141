@@ -1,0 +1,267 @@
+
+body{
+    background-color:#95389E;
+    color: #ffffff;
+    font-family: "游ゴシック", Helvetica, Arial,sans-serif;
+    margin: 0 20px;
+}
+.logo{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+/*ハンバーガーメニュー*/
+#toggler{
+  display: none;
+}
+.hamburger-container{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -36px;
+  left: 290px;
+}
+.hamburger-container .line{
+  display: block;
+  height: 3px;
+  background-color: #000000;
+  position: relative;
+  transition: transform .2s ease-in-out, top .2s ease-in-out .2s;
+  top: 0;
+}
+.hamburger-container .line:nth-child(2){
+  margin-top: 7px;
+}
+#toggler:checked + label .hamburger-container .line:nth-child(1){
+  transform: rotate(45deg);
+  top: 4px;
+  transition: top .2s ease-in-out, transform .2s ease-in-out .2s;
+}
+#toggler:checked + label .hamburger-container .line:nth-child(2){
+  transform: rotate(-45deg);
+  top: -5px;
+  transition: top .2s ease-in-out, transform .2s ease-in-out .2s;
+  }
+.nav-items{
+  z-index: 999;
+  background-color: #95389E;
+  width:375px;
+  height: 712px;
+  position: absolute;
+  top: 124px;
+  transform: scaleY(0);
+  transition: transform .2s ease-in-out .2s,opacity .2s ease-in-out .2s;
+  transform-origin: 50% 0;
+  opacity: 0;
+}
+#toggler:checked ~ .nav-items{
+  transform: scaleY(1);
+  opacity: 1;
+}
+.items{
+  margin-top: 1em;
+  margin-right: 60px;
+}
+ul .item{
+  list-style: none;
+  text-align: center;
+}
+ul .item a{
+  color: #CEA269;
+  text-decoration: none;
+  font:26px/2.5 '游ゴシック';
+  font-weight: bolder;
+
+}
+.top{
+  position: relative;
+  left: 220px;
+  bottom: -30px;
+}
+/*main*/
+h1{
+    text-align: center;
+    color: #CEA269;
+    margin-top: 10px;
+}
+.st{
+  text-align: left;
+  padding-top: 25px;
+  font: bolder 25px '游ゴシック';
+  color:#5ABEB6;
+}
+.dot{
+  color:#5ABEB6;
+}
+.note{
+  color: #CEA269;
+  font-size: 13px;
+  margin-left: 120px;
+}
+.photo{
+  display: block;
+  margin-left: 55px;
+}
+.botten{
+  width: 250px;
+  height: 40px;
+  background-color: #5ABEB6;
+  border: 2px #ffffff solid;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.ball{
+  position: relative;
+  left: 93px;
+  top: 8px;
+}
+.yoyaku{
+  position: relative;
+  left: 100px;
+  top: 3px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.datalist{
+  margin-right: 0;
+}
+.datalist_{
+  margin: 20px auto;
+}
+.tds{
+  padding-right: 80px;
+}
+th{
+  font-size: 18px;
+  padding: 0 15px;
+}
+td{
+  text-align: center;
+}
+.people{
+  color: #5ABEB6;
+  font-size: 14px;
+}
+.name{
+  font-size: 16px;
+  font-weight: bolder;
+}
+.note_{
+  color: #CEA269;
+  font-size: 13px;
+  padding-left: 20px;
+}
+.list{
+  display: block;
+  margin: 0 auto;
+}
+.title{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  width: 250px;
+  height: 45px;
+  background-color: #5ABEB6;
+  border:2px #FF414D solid;
+}
+.title p{
+  text-align: center;
+  font: bolder 17px '游ゴシック';
+  margin: 0 auto;
+  padding: 9.5px 0 7.3px 0;
+}
+.plus{
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+.plus01,.plus02{
+  width: 17px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  margin: 5px;
+  border-radius: 2px;
+}
+.plus02{
+  transform: rotate(0.25turn) translate(-6px,0);
+}
+.txt{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 300px;
+  background-color: #5ABEB6;
+  outline:2px #FF414D solid;
+}
+.txt p{
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 19px;
+}
+.none{
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: .3s;
+  
+}
+.active{
+  visibility: visible;
+  opacity: 1;
+  height:250px;
+  transition-duration: .3s;
+  background-color:#5ABEB6;
+}
+/*footer*/
+.logo_{
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.adress{
+  padding-bottom: 20px;
+}
+.adress_{
+  text-align: center;
+  margin: 30px 0;
+  font-size: 14px;
+}
+.adress_ a{
+  text-decoration: none;
+  color: #fff;
+}
+#btn{
+  text-decoration: none;
+  position: relative;
+  right: 18px;
+}
+.top_{
+  position: absolute;
+ top: -132px;
+  left: 280px;
+  color: #000000;
+  font-weight: bolder;
+}
+.top_1{
+  position: relative;
+  bottom: 105px;
+  left: 320px;
+}
+.top_2{
+  position: relative;
+  bottom: -10px;
+  left: 252px;
+}
+.top_3{
+  font-size: 11px;
+  padding-top: 10px;
+  text-align: center;
+}
